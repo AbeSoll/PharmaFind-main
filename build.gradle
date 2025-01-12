@@ -1,0 +1,14 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    dependencies {
+        // Use the latest compatible version of Google Services plugin
+        classpath 'com.google.gms:google-services:4.3.15' // Updated from 4.3.10 to the latest version
+    }
+}
+
+plugins {
+    // Ensure compatibility between Android Gradle Plugin and Gradle version
+    id 'com.android.application' version '8.1.1' apply false // Updated from 7.4.2
+    id 'com.android.library' version '8.1.1' apply false // Updated from 7.4.2
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin' version '2.0.1' apply false
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.pharmafind">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="PharmaTrack"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PharmaTrack"
+        tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBRvzeYlDX3ooANb7PEXeAaofcMMyMIjPQ" />
+
+        <activity
+            android:name="com.example.pharmafind.WebActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.pharmafind.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.pharmafind.WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.pharmafind.MapsActivity"
+            android:exported="false"
+            android:label="Find Pharmacies" />
+        <activity
+            android:name="com.example.pharmafind.MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.pharmafind.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.pharmafind.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.pharmafind.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.pharmafind.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

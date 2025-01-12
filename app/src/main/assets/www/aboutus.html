@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Members</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    section {
+      padding: 3em 1em;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5em;
+      color: #1f003b;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      width: 300px;
+      padding: 2em;
+      text-align: center;
+      margin-bottom: 20px; /* Add spacing between cards */
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .img-container {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 1em;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid #6045ea;
+    }
+    .img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .card h3 {
+      font-size: 1.2rem;
+      margin: 0.5em 0;
+      font-weight: 600;
+    }
+    .card h4 {
+      font-size: 1rem;
+      color: #6045ea;
+      margin-bottom: 0.5em;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 1em;
+    }
+    #about-app {
+      background-color: #fcfbfb;
+      padding: 3em 1em;
+    }
+    #about-app h1 {
+      margin-bottom: 1em;
+      color: #333;
+    }
+    #about-app p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 1.5em auto;
+    }
+    #about-app .logo {
+      width: 200px; /* Reduce logo size */
+      height: 200px;
+    }
+    .btn-container {
+      margin-top: 2em;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #6045ea;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #8567f7;
+    }
+    #copyright {
+      background-color: #1f003b;
+      color: #fff;
+      padding: 1em 0;
+    }
+    #copyright p {
+      font-size: 1rem;
+      margin: 0;
+    }
+    @media screen and (min-width: 768px) {
+      .card {
+        width: 280px;
+      }
+      #about-app p {
+        font-size: 1.1rem;
+      }
+    }
+    @media screen and (min-width: 992px) {
+      .row {
+        gap: 3em;
+      }
+      .card {
+        width: 260px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<!-- About Our App -->
+<section id="about-app">
+  <h1>About Our App</h1>
+  <img class="logo" src="gambar/logo.png" alt="PharmaTrack Logo">
+  <p>
+    PharmaTrack is a revolutionary smartphone application that acts as a guide for those looking for local pharmacies with exceptional convenience and efficiency. With real-time geolocation features, users can quickly discover and navigate to pharmacies in their area, ensuring prompt access to healthcare services.
+  </p>
+  <div class="btn-container">
+    <a href="https://github.com/antideviant/PharmaFind" target="_blank" class="btn">Visit on GitHub</a>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section>
+  <h1>Meet Our Team</h1>
+  <div class="row">
+    <div class="card">
+      <div class="img-container">
+        <img src="gambar/1.png" alt="Ahmad Solehin">
+      </div>
+      <h3>Ahmad Solehin Bin Asmadi</h3>
+      <h4>Project Manager</h4>
+      <p>2023479352</p>
+    </div>
+    <div class="card">
+      <div class="img-container">
+        <img src="gambar/2.png" alt="Muhammad Fauzi">
+      </div>
+      <h3>Muhammad Fauzi Bin Halim</h3>
+      <h4>Lead Programmer</h4>
+      <p>2022898418</p>
+    </div>
+    <div class="card">
+      <div class="img-container">
+        <img src="gambar/3.png" alt="Muhammad Hafizuddin">
+      </div>
+      <h3>Muhammad Hafizuddin Bin Raemee</h3>
+      <h4>System Administrator</h4>
+      <p>2023874148</p>
+    </div>
+    <div class="card">
+      <div class="img-container">
+        <img src="gambar/4.png" alt="Azfar Harith">
+      </div>
+      <h3>Azfar Harith Bin Azhar Fahmy</h3>
+      <h4>Database Specialist</h4>
+      <p>2023680236</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<section id="copyright">
+  <p>&copy; 2024 PharmaTrack</p>
+</section>
+</body>
+</html>
